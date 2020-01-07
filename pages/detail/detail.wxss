@@ -1,0 +1,25 @@
+/* pages/detail/detail.wxss */
+.movieList{
+    display:flex;
+    margin-top:30rpx;
+    font-size:30rpx;
+}
+.movieList>view{
+    line-height:30px;
+}
+.movieList>image{
+    width:250rpx;
+    height:250rpx;
+    margin-right:20rpx;
+}
+.movieList>.movieDetail{
+    flex:1;
+}
+.movieList .movieDetail>.movieTitle{
+    display:flex;
+    justify-content:space-between;
+}
+.movieList .movieDetail>.movieTitle>.ranking{
+    padding-right:50rpx;
+    color:#f60;
+}

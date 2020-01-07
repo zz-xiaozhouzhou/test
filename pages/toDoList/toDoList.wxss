@@ -1,0 +1,18 @@
+/* pages/toDoList/toDoList.wxss */
+.inp{
+    display:flex;
+    align-items:center;
+}
+.btns{
+    display:flex;
+}
+.done{
+    color:green;
+}
+.undone{
+    color:red;
+}
+.active{
+    color:#fff;
+    background:red;
+}

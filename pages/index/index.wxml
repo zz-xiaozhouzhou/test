@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+    <swiper 
+      autoplay="{{autoplay}}" 
+      interval="{{interval}}" 
+      duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" style="width:750rpx"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="movie-status" bindtap="goToList" data-type="zzsy">
+      <text>正在上映</text>
+      <text class="right">></text>
+    </view>
+    <view class="movie-status" bindtap="goToList" data-type="jjsy">
+      <text>即将上映</text>
+      <text class="right">></text>
+    </view>
+    <view class="movie-status" bindtap="goToList" data-type="top250">
+      <text>top250</text>
+      <text class="right">></text>
+    </view>
+</view>

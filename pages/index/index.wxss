@@ -1,0 +1,15 @@
+/**index.wxss**/
+.container{
+  border-sizing:border-box;
+}
+.container .movie-status{
+  display:flex;
+  justify-content:space-between;
+  background:#f2f2f2;
+  align-items:center;
+  line-height:40px;
+  margin-top:30rpx;
+}
+.container .movie-status>.right{
+  padding-right:30rpx;
+}

@@ -1,0 +1,18 @@
+<!--pages/detail/detail.wxml-->
+<text wx:if="{{type==='zzsy'}}">正在上映</text>
+<text wx:if="{{type==='jjsy'}}">即将上映</text>
+<text wx:if="{{type==='top250'}}">top250</text>
+<view class="movieList" wx:for="{{list}}" wx:key="id">
+    <image src="{{item.src}}"></image>
+    <view class="movieDetail">
+        <view class="movieTitle">
+            <text>电影名:{{item.movieName}}</text>
+            <text class="ranking">{{item.ranking}}</text>
+        </view>
+        <view>马娜</view>
+        <view>导演名字:{{item.directorName}}</view>
+    </view>
+</view>
+   
+
+

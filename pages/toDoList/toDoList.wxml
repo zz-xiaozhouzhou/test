@@ -1,0 +1,12 @@
+<form bindsubmit="formSubmit">
+    <view class="inp">
+        <input placeholder="请输入" name="taskName" value="{{val}}"/>
+        <button type="default" size="mini" formType="submit">点我</button>
+    </view>
+</form>
+<view wx:for="{{list}}" wx:key="id" class="{{item.status===1?'done':'undone'}}">{{item.taskName}}</view>
+<view class="btns">
+    <button size="mini" catchtap="changeBtn" data-status="all" class="{{selectAll==='all'?'active':''}}">全部</button>
+    <button size="mini" catchtap="changeBtn" data-status="done" class="{{selectAll==='done'?'active':''}}">已完成</button>
+    <button size="mini" catchtap="changeBtn" data-status="undone" class="{{selectAll==='undone'?'active':''}}">未完成</button>
+</view>

@@ -1,0 +1,28 @@
+.clearfix::after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+.clerfix{
+    zoom: 1;
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+h2{
+    width: 58px;
+    font-size: 14px;
+    color: #010000;
+    margin-bottom: 5px;
+}
+h2 span{
+    color: #d43b33;
+}

@@ -12,6 +12,7 @@ export default function wxRequest(url, params) {
                 const {statusCode}=res;
                 if (statusCode === 200) {
                     resolve(res);
+                    console.log(111);                 
                 } else {
                     reject(res);
                 }
